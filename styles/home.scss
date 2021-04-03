@@ -1,0 +1,247 @@
+@import "./colors";
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: transparent;
+
+}
+::-webkit-scrollbar-thumb{
+    background:lighten($color: $darkBlue, $amount: 6);
+    transition: .5s;
+    border-radius:5px;
+   
+    
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* Mobile */
+#nav-bg{    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hero-bg{
+    
+    margin-top: 70px;
+    padding:0px 20px;
+    
+    h5{color:$lightBlue}
+    h1{font-weight: 800;font-size: 30px;}
+    p {
+        line-height: 25px;
+        margin-top: 10px;
+        color: dimgrey;
+        font-size: 14px;
+    }
+    img{
+        height: 200px;
+        margin-top: 40px;
+    }
+
+    #first-btn{
+        background-color: $lightBlue;
+        border: none;
+        color: white;
+        border-radius: 100px;
+        padding: 5px 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+// Illustration
+
+@keyframes spin-right {
+	100% {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+#earth {
+	background-color : $lightBlue;
+	border-radius : 50px;
+	margin-left : -15px;
+	margin-top : -15px;
+	height : 25px;
+	width : 25px;
+	left : 50%;
+	position : absolute;
+	top : 0%;
+}
+
+#moon {
+    background-color : $darkBlue ;
+    @extend #earth
+}
+
+#earth-orbit {
+	border: none;
+	border-radius: 50%;
+	height: 174px;
+	width: 174px;
+	position: absolute;
+	margin-top: -200px;
+	margin-left: 25px;
+	animation: spin-right 10s linear infinite;
+    
+}
+#moon-orbit {
+    @extend #earth-orbit;
+	animation: spin-right 10s ease infinite;
+    
+}
+
+#bgBlue{
+    background-color: $darkBlue;
+    margin-top: 100px;
+    .container {
+        padding:70px 30px 70px 30px;
+        h1{font-size:30px;}
+        #para{
+            margin-top: 20px;
+        }
+    }
+}
+
+#about_us{
+    padding:0px 30px 0px 30px;
+    h1{
+        color:lightgrey;
+        font-size: 50px;
+        margin-left: -25px;
+        margin-bottom: 20px;
+       
+    }
+    img{
+        margin-top: 10px;
+        height: 180px;
+        margin-bottom: 50px;
+    }
+}
+
+#pitc_para{
+    padding:0px 30px 0px 30px;
+    margin-top:40px;
+    margin-bottom: 50px;
+    h1{font-size: 30px;}
+    h1 span{color: $lightBlue;}
+    p{
+        margin-top: 40px;
+        font-size: 14px;
+        line-height: 25px;
+    }
+
+    #get_started{
+        margin-top: 20px;
+        span{
+            padding-bottom: 5px; border-bottom: 2px solid #136EFF;
+        }
+        
+    }
+}
+
+footer{
+    background-color: lightgray;
+    dt span {
+        color: $darkBlue;
+    }
+    dd{
+        margin-left: 10px;
+        margin-top: 10px;
+        a{color:black}
+    }
+}
+
+@mixin para {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0px; 
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+
+    #hero-bg{
+        h1{font-size: 40px;}
+        margin-top: 100px;
+        img{
+            margin-top:0px;
+            height: 400px;
+        }
+    }
+
+    #bgBlue{
+        .container {
+            padding:110px 0px 110px 0px;
+            h1{font-size: 40px;}
+           
+           
+        }
+    }
+
+    #earth {
+        margin-left : -25px;
+        margin-top : -25px;
+        height : 50px;
+        left : 50%;
+        position : absolute;
+        top : 0%;
+        width : 50px;
+    }
+
+    #earth-orbit {
+        
+        left: 50%;
+        height: 350px;
+        margin-top: -200px;
+        margin-left: -260px;
+        position: absolute;
+        top: 50%;
+        width: 350px;
+        
+    }
+
+    #about_us{
+        h1{
+            font-size: 80px;
+            margin-left: 10px;
+            margin-bottom: 50px;
+        }
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            margin-top: 0px;
+
+        }
+        img{
+            margin-top: 50px;height: 300px;
+        }
+    }
+    
+    #pitc_para{
+        margin-top:100px;
+        margin-bottom: 100px;
+
+        h1{font-size: 40px;}
+      
+        
+        #get_started{
+            margin-top: 20px;
+            span{
+                padding-bottom: 5px; 
+                border-bottom: 2px solid #136EFF;
+            }
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 30px;
+            margin-top: 0px;
+
+        }
+    }
+
+}

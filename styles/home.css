@@ -1,0 +1,258 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #183ea9;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 5px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Mobile */
+#nav-bg {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#hero-bg {
+  margin-top: 70px;
+  padding: 0px 20px;
+}
+
+#hero-bg h5 {
+  color: #009FE3;
+}
+
+#hero-bg h1 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+#hero-bg p {
+  line-height: 25px;
+  margin-top: 10px;
+  color: dimgrey;
+  font-size: 14px;
+}
+
+#hero-bg img {
+  height: 200px;
+  margin-top: 40px;
+}
+
+#hero-bg #first-btn {
+  background-color: #009FE3;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  padding: 5px 30px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@-webkit-keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin-right {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+#earth, #moon {
+  background-color: #009FE3;
+  border-radius: 50px;
+  margin-left: -15px;
+  margin-top: -15px;
+  height: 25px;
+  width: 25px;
+  left: 50%;
+  position: absolute;
+  top: 0%;
+}
+
+#moon {
+  background-color: #14348E;
+}
+
+#earth-orbit, #moon-orbit {
+  border: none;
+  border-radius: 50%;
+  height: 174px;
+  width: 174px;
+  position: absolute;
+  margin-top: -200px;
+  margin-left: 25px;
+  -webkit-animation: spin-right 10s linear infinite;
+          animation: spin-right 10s linear infinite;
+}
+
+#moon-orbit {
+  -webkit-animation: spin-right 10s ease infinite;
+          animation: spin-right 10s ease infinite;
+}
+
+#bgBlue {
+  background-color: #14348E;
+  margin-top: 100px;
+}
+
+#bgBlue .container {
+  padding: 70px 30px 70px 30px;
+}
+
+#bgBlue .container h1 {
+  font-size: 30px;
+}
+
+#bgBlue .container #para {
+  margin-top: 20px;
+}
+
+#about_us {
+  padding: 0px 30px 0px 30px;
+}
+
+#about_us h1 {
+  color: lightgrey;
+  font-size: 50px;
+  margin-left: -25px;
+  margin-bottom: 20px;
+}
+
+#about_us img {
+  margin-top: 10px;
+  height: 180px;
+  margin-bottom: 50px;
+}
+
+#pitc_para {
+  padding: 0px 30px 0px 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+#pitc_para h1 {
+  font-size: 30px;
+}
+
+#pitc_para h1 span {
+  color: #009FE3;
+}
+
+#pitc_para p {
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#pitc_para #get_started {
+  margin-top: 20px;
+}
+
+#pitc_para #get_started span {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #136EFF;
+}
+
+footer {
+  background-color: lightgray;
+}
+
+footer dt span {
+  color: #14348E;
+}
+
+footer dd {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+footer dd a {
+  color: black;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+  #hero-bg {
+    margin-top: 100px;
+  }
+  #hero-bg h1 {
+    font-size: 40px;
+  }
+  #hero-bg img {
+    margin-top: 0px;
+    height: 400px;
+  }
+  #bgBlue .container {
+    padding: 110px 0px 110px 0px;
+  }
+  #bgBlue .container h1 {
+    font-size: 40px;
+  }
+  #earth, #moon {
+    margin-left: -25px;
+    margin-top: -25px;
+    height: 50px;
+    left: 50%;
+    position: absolute;
+    top: 0%;
+    width: 50px;
+  }
+  #earth-orbit, #moon-orbit {
+    left: 50%;
+    height: 350px;
+    margin-top: -200px;
+    margin-left: -260px;
+    position: absolute;
+    top: 50%;
+    width: 350px;
+  }
+  #about_us h1 {
+    font-size: 80px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  #about_us p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0px;
+  }
+  #about_us img {
+    margin-top: 50px;
+    height: 300px;
+  }
+  #pitc_para {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #pitc_para h1 {
+    font-size: 40px;
+  }
+  #pitc_para #get_started {
+    margin-top: 20px;
+  }
+  #pitc_para #get_started span {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #136EFF;
+  }
+  #pitc_para p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=home.css.map */
