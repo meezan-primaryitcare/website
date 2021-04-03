@@ -1,0 +1,183 @@
+@import "./colors";
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: transparent;
+
+}
+::-webkit-scrollbar-thumb{
+    background:lighten($color: $darkBlue, $amount: 6);
+    transition: .5s;
+    border-radius:5px; 
+    
+}
+
+.cursor{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    
+}
+/* Mobile */
+#nav-bg{    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .active{color:$darkBlue}
+    a{
+        color: black;
+    }
+}
+
+
+
+#hero-bg{
+    
+    margin-top: 70px;
+    padding:0px 20px;
+    
+    h5{color:$lightBlue}
+    h1{font-weight: 800;font-size: 30px;}
+    p {
+        line-height: 25px;
+        margin-top: 20px;
+        color: dimgrey;
+        font-size: 16px;
+        width: 350px;
+    }
+    img{
+        height: 200px;
+        margin-top: 40px;
+    }
+
+    #first-btn{
+        background-color: $lightBlue;
+        border: none;
+        color: white;
+        border-radius: 100px;
+        padding: 5px 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+#blue_box_top{
+    height: 400px;
+    width: 270px;
+    background-color: $darkBlue;
+    margin-top: -450px;
+    margin-left: 200px;
+}
+
+#rect_bg{
+    height: 150px;
+    width: 600px;
+    background-color: $lightBlue;
+    margin-top: 140px;
+   
+}
+
+#sections{
+   margin-top: 100px;
+   margin-bottom: 100px;
+//    background-color: yellow;
+   p{
+       margin-top: 20px;
+       line-height: 20px;
+   }
+   .blue_box{
+    height: 400px;
+    width: 270px;
+    background-color: $darkBlue;
+    margin-top: -500px;
+    margin-left: -50px;
+   }
+   img{
+       margin-top: 100px;
+   }
+   .logo_img{
+       height: 40px;
+       margin-right: 20px;
+       margin-top: 20px;
+   }
+
+   ul{
+       margin-top: 30px;
+    padding-inline-start: 0px;
+   }
+
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $lightBlue; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  button{
+    background-color: $lightBlue;
+    border: none;
+    color: white;
+    border-radius: 100px;
+    padding: 5px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+footer{
+    background-color: lightgray;
+    dt span {
+        color: $darkBlue;
+    }
+    dd{
+        margin-left: 10px;
+        margin-top: 10px;
+        a{color:black}
+    }
+    .row{
+        text-align: center;
+    }
+}
+
+@mixin para {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0px; 
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+
+    #hero-bg{
+       
+        h1{font-size: 40px;}
+        margin-top: 100px;
+        img{
+            margin-top:0px;
+            height: 400px;
+        }
+    }
+
+   
+
+  
+
+    footer{
+        .row{
+            text-align: left;
+        }
+    }
+
+}
