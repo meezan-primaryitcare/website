@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="styles/contact.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&family=Roboto:wght@500&display=swap"
+        rel="stylesheet">
+
+    <!-- Animation on scroll -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div>
+        <!-- Navbar wrap-->
+        <div id="nav-bg" class="navbar-wrap">
+            <nav class="navbar navbar-expand-lg" id="navbar_top">
+                <div class="container divineza-section">
+                    <div class="navbar-brand">
+                        <a href="index.html">
+                            <img src="images/home_page/logo.png" height="55" width="" alt="divineza logo"
+                                id="brand-image">
+                        </a>
+                    </div>
+                    <button class="navbar-toggler border border-dark" type="button" data-toggle="collapse"
+                        data-target="#NavbarMain" aria-controls="NavbarMain" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="NavbarMain">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                            <li id="service_link" class="nav-item"><a class="nav-link" href="services.html">Services</a>
+
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">Organisation</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Solutions</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar wrap ends -->
+
+        <!-- contact form -->
+        <div class="container" id="hero-bg" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">
+
+            <div style="border-radius: 30px;" class="row myshadow pt-sm-5 pt-lg-0 ">
+                <div id="bluebg" class="col-sm-6 p-5 col-lg-4">
+                    <h4>Contact Information</h4>
+                    <p>Fill up the form and our Team will get back to 
+                        you within 24 hours</p>
+
+                    <!-- circles -->
+                    <div id="circles">
+                        <div id="bluecircle"></div>
+                        <div id="whitecircle"></div>
+                    </div>
+                    <!-- circles -->
+
+
+                    <div>
+                        <div class="row mt-3">
+                            <div class="col-2">
+                                <img src="images/contact/call-24px.svg" alt="">
+                            </div>
+                            <div class="col-10"><span>+91 1234567899</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row mt-3">
+                            <div class="col-2">
+                                <img src="images/contact/markunread-24px.svg" alt="">
+                            </div>
+                            <div class="col-10"><span>info@primaryitcare.com</span></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="row mt-3">
+                            <div class="col-2">
+                                <img src="images/contact/room-24px.svg" alt="">
+
+                            </div>
+                            <div class="col-10"><span>2 Ruhi Shopping Center, <br>
+                                    Paldi, Ahmedabad, Gujarat,<br>
+                                    India 380007</span></div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div id="social-icon" class="row mt-5">
+                            <div class="col-1">
+                                <img src="images/contact/facebook.svg" alt="">
+
+                            </div>
+                            <div class="col-1">
+                                <img src="images/contact/instagram.svg" alt="">
+
+                            </div>
+                            <div class="col-1">
+                                <img class="ml-2" src="images/contact/linkedin.svg" alt="">
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div  class="col-sm-6 p-0 col-lg-8">
+                    <div id="white-round" class="p-5 bg-white" style="width: 100%;height: 100%;">
+
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputEmail4">First Name</label>
+                                    <input type="text" class="form-control" id="inputfirstName" required
+                                        placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Last Name</label>
+                                    <input type="text" class="form-control" id="inputlastname" placeholder="Last Name">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="validationServer01">Email</label>
+                                    <input type="text" class="form-control is-invalid" id="validationServer01"
+                                        placeholder="abc@xyz.com"  required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                    <div class="invalid-feedback">
+                                        Email address not proper
+                                    </div>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="validationServer01">Phone Number</label>
+                                    <input type="text" class="form-control is-valid" id="validationServer01"
+                                        placeholder="+91 1234567890"  required>
+                                    <div class="valid-feedback">
+                                        Looks good!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label for="inputAddress">Select Service</label><br>
+                                    <div class="row mb-3 mt-2">
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Mobile Developement
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12  col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Web Developement
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12  col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">
+                                                    Data Visualization
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-2">
+                                        <div class="col-12 col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck1">
+                                                <label class="form-check-label" for="defaultCheck1">
+                                                    Disaster Management
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12  col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck2">
+                                                <label class="form-check-label" for="defaultCheck2">
+                                                    Managed Service 
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12  col-md-4">
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="defaultCheck3">
+                                                <label class="form-check-label" for="defaultCheck3">
+                                                    Digital Marketing
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+
+                            <div class="form-row">
+                                <div class="form-group col-md-12">
+                                    <label for="inputCity">Message</label>
+                                    <input type="text" class="form-control" id="inputCity">
+                                </div>
+
+                            </div>
+
+                            <button id="submit-btn" type="submit" class="btn btn-primary">Send</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--End contact form -->
+
+    <!-- header ENDS -->
+
+
+
+    <div class="cursor"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script src="js/header_scroll.js"></script>
+
+    <!-- animations on scroll -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+
+        const cursor = document.querySelector(".cursor");
+        document.addEventListener("mousemove", (e) => {
+            cursor.style.left = e.pageX + "px";
+            cursor.style.top = e.pageY + "px";
+        })
+    </script>
+
+
+</body>
+
+</html>

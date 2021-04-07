@@ -1,0 +1,15 @@
+<svg id="markunread-24px" xmlns="http://www.w3.org/2000/svg" width="46.74" height="46.74" viewBox="0 0 46.74 46.74">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="Path_314" data-name="Path 314" class="cls-1" d="M0,0H46.74V46.74H0Z"/>
+  <path id="Path_315" data-name="Path 315" class="cls-2" d="M37.055,4H5.9A3.89,3.89,0,0,0,2.019,7.9L2,31.265a3.906,3.906,0,0,0,3.9,3.9h31.16a3.906,3.906,0,0,0,3.9-3.9V7.9A3.906,3.906,0,0,0,37.055,4Zm0,7.79-15.58,9.738L5.9,11.79V7.9l15.58,9.738L37.055,7.9Z" transform="translate(1.895 3.79)"/>
+</svg>
