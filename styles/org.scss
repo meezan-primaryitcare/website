@@ -1,0 +1,342 @@
+@import "./colors";
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: transparent;
+
+}
+::-webkit-scrollbar-thumb{
+    background:lighten($color: $darkBlue, $amount: 6);
+    transition: .5s;
+    border-radius:5px; 
+    
+}
+
+
+
+
+.cursor{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    
+}
+/* Mobile */
+#nav-bg{    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .active{color:$darkBlue}
+    a{
+        color: black;
+    }
+}
+
+#hero-bg{
+    
+    margin-top: 70px;
+    padding:0px 20px;
+    
+    h5{color:$lightBlue}
+    h1{font-weight: 800;font-size: 30px;}
+    p {
+        line-height: 25px;
+        margin-top: 20px;
+        color: dimgrey;
+        font-size: 16px;
+        width: 90%;
+
+    }
+    img{
+        height: 400px;
+        margin-top:50px;
+    }
+
+    #first-btn{
+        background-color: $lightBlue;
+        border: none;
+        color: white;
+        border-radius: 100px;
+        padding: 5px 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+
+#para-sections{
+   margin-top: 100px;
+   margin-bottom: 100px;
+//    background-color: yellow;
+    h2{
+        margin-bottom: 100px;
+        text-align: center;
+    }
+    h1{
+        text-align: center;
+        color: $darkBlue;
+    }
+   p{
+       margin-top: 20px;
+       text-align: center;
+       border-right: none;
+       padding-right: 0px;
+   }
+   
+   .blue_box{
+    height: 300px;
+    width: 200px;
+    background-color: $darkBlue;
+    margin-top: -350px;
+    margin-left: 20px;
+   }
+   img{
+    height: 300px;
+    margin-top:100px;
+   }
+   .logo_img{
+       height: 40px;
+       margin-right: 20px;
+       margin-top: 20px;
+   }
+
+   ul{
+       margin-top: 30px;
+    padding-inline-start: 0px;
+   }
+
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $lightBlue; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  button{
+    background-color: $lightBlue;
+    border: none;
+    color: white;
+    border-radius: 100px;
+    padding: 5px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+
+
+#sections{
+    margin-top: 100px;
+    margin-bottom: 100px;
+     h2{    
+         margin-bottom: 30px;
+     }
+    p{
+        margin-top: 0px;
+        padding: 10px 10px;
+    }
+    
+    img{
+        height: 400px;
+        margin-top:50px;
+    }
+     
+    ul{
+        margin-top: 0px;
+     padding-inline-start: 0px;
+    }
+ 
+   ul li::before {
+     content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+     color: $lightBlue; /* Change the color */
+     font-weight: bold; /* If you want it to be bold */
+     display: inline-block; /* Needed to add space between the bullet and the text */
+     width: 1em; /* Also needed for space (tweak if needed) */
+     margin-left: -1em; /* Also needed for space (tweak if needed) */
+   }
+ 
+   
+ }
+
+ #start-up{
+     padding-top: 100px;
+     padding-bottom: 100px;
+
+     p{
+         margin-top: 20px;
+     }
+
+     img{
+        height: 200px;
+        margin-top:40px;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button{
+        background-color: $lightBlue;
+        border: none;
+        color: white;
+        margin-left: 20px;
+        margin-top: 20px;
+        border-radius: 100px;
+        padding: 5px 30px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      }
+
+    
+ }
+
+ .yellow-bg{
+    background-color: #FFF1C0;
+    border-radius: 16px;
+    margin-bottom: 20px;
+    h6{
+        width: 90%;
+    }
+    
+    a{
+        margin-top: 10px;
+        
+        border-bottom: 1px solid $darkBlue;
+    }
+    img{
+        height: 40px;
+        float: right;
+        padding-bottom: 10px;
+        
+        
+    }
+}
+
+footer{
+    background-color: lightgray;
+    dt span {
+        color: $darkBlue;
+    }
+    dd{
+        margin-left: 10px;
+        margin-top: 10px;
+        a{color:black}
+    }
+    .row{
+        text-align: center;
+    }
+}
+
+@mixin para {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0px; 
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+
+    #hero-bg{
+       
+        h1{font-size: 40px;}
+        margin-top: 100px;
+        img{
+            margin-top:0px;
+            height: 500px;
+        }
+        p{
+            width: 350px;
+            font-family: cursive;
+            
+            
+        }
+        #first-btn{
+            margin-top: 10px;
+        }
+    }
+
+ 
+    #para-sections{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        p{
+            
+            padding-right: 25px;
+        }
+        .col-md-4:nth-child(1) p{
+            border-right: 2px solid black;
+        }
+        .col-md-4:nth-child(2) p{
+            border-right: 2px solid black;
+        }
+        h2{
+            margin-bottom: 50px;
+            text-align: left;
+        }
+        .blue_box{
+            height: 400px;
+            width: 270px;
+            margin-top: -500px;
+            margin-left: -50px;
+           }
+           img{
+               margin-top: 100px;
+               height: 400px;
+           }
+           .logo_img{
+               height: 40px;
+               margin-right: 20px;
+               margin-top: 20px;
+           }
+       
+    
+    }
+
+    #sections{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        
+        h2{    
+            margin-bottom: 30px;
+        }
+           img{
+            height: 500px;
+           }
+           .logo_img{
+               height: 40px;
+               margin-right: 20px;
+               margin-top: 20px;
+           }
+       
+    
+    }
+
+    #start-up{
+
+        img{
+            height: 300px;
+        margin-top:0px;
+        padding-left: 150px;
+        }
+    }
+
+
+    footer{
+        .row{
+            text-align: left;
+        }
+    }
+
+}

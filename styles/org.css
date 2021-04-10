@@ -1,0 +1,351 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #183ea9;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 5px;
+}
+
+.cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Mobile */
+#nav-bg {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav-bg .active {
+  color: #14348E;
+}
+
+#nav-bg a {
+  color: black;
+}
+
+#hero-bg {
+  margin-top: 70px;
+  padding: 0px 20px;
+}
+
+#hero-bg h5 {
+  color: #009FE3;
+}
+
+#hero-bg h1 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+#hero-bg p {
+  line-height: 25px;
+  margin-top: 20px;
+  color: dimgrey;
+  font-size: 16px;
+  width: 90%;
+}
+
+#hero-bg img {
+  height: 400px;
+  margin-top: 50px;
+}
+
+#hero-bg #first-btn {
+  background-color: #009FE3;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  padding: 5px 30px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#para-sections {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#para-sections h2 {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+#para-sections h1 {
+  text-align: center;
+  color: #14348E;
+}
+
+#para-sections p {
+  margin-top: 20px;
+  text-align: center;
+  border-right: none;
+  padding-right: 0px;
+}
+
+#para-sections .blue_box {
+  height: 300px;
+  width: 200px;
+  background-color: #14348E;
+  margin-top: -350px;
+  margin-left: 20px;
+}
+
+#para-sections img {
+  height: 300px;
+  margin-top: 100px;
+}
+
+#para-sections .logo_img {
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#para-sections ul {
+  margin-top: 30px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+#para-sections ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #009FE3;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+#para-sections button {
+  background-color: #009FE3;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  padding: 5px 30px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#sections {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#sections h2 {
+  margin-bottom: 30px;
+}
+
+#sections p {
+  margin-top: 0px;
+  padding: 10px 10px;
+}
+
+#sections img {
+  height: 400px;
+  margin-top: 50px;
+}
+
+#sections ul {
+  margin-top: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+#sections ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #009FE3;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+#start-up {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#start-up p {
+  margin-top: 20px;
+}
+
+#start-up img {
+  height: 200px;
+  margin-top: 40px;
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#start-up button {
+  background-color: #009FE3;
+  border: none;
+  color: white;
+  margin-left: 20px;
+  margin-top: 20px;
+  border-radius: 100px;
+  padding: 5px 30px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.yellow-bg {
+  background-color: #FFF1C0;
+  border-radius: 16px;
+  margin-bottom: 20px;
+}
+
+.yellow-bg h6 {
+  width: 90%;
+}
+
+.yellow-bg a {
+  margin-top: 10px;
+  border-bottom: 1px solid #14348E;
+}
+
+.yellow-bg img {
+  height: 40px;
+  float: right;
+  padding-bottom: 10px;
+}
+
+footer {
+  background-color: lightgray;
+}
+
+footer dt span {
+  color: #14348E;
+}
+
+footer dd {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+footer dd a {
+  color: black;
+}
+
+footer .row {
+  text-align: center;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+  #hero-bg {
+    margin-top: 100px;
+  }
+  #hero-bg h1 {
+    font-size: 40px;
+  }
+  #hero-bg img {
+    margin-top: 0px;
+    height: 500px;
+  }
+  #hero-bg p {
+    width: 350px;
+    font-family: cursive;
+  }
+  #hero-bg #first-btn {
+    margin-top: 10px;
+  }
+  #para-sections {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #para-sections p {
+    padding-right: 25px;
+  }
+  #para-sections .col-md-4:nth-child(1) p {
+    border-right: 2px solid black;
+  }
+  #para-sections .col-md-4:nth-child(2) p {
+    border-right: 2px solid black;
+  }
+  #para-sections h2 {
+    margin-bottom: 50px;
+    text-align: left;
+  }
+  #para-sections .blue_box {
+    height: 400px;
+    width: 270px;
+    margin-top: -500px;
+    margin-left: -50px;
+  }
+  #para-sections img {
+    margin-top: 100px;
+    height: 400px;
+  }
+  #para-sections .logo_img {
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  #sections {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #sections h2 {
+    margin-bottom: 30px;
+  }
+  #sections img {
+    height: 500px;
+  }
+  #sections .logo_img {
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  #start-up img {
+    height: 300px;
+    margin-top: 0px;
+    padding-left: 150px;
+  }
+  footer .row {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=org.css.map */
