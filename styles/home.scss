@@ -1,6 +1,10 @@
 @import "./colors";
+
+
+
 html {
     scroll-behavior: smooth;
+   
 }
 ::-webkit-scrollbar{
     width: 12px;
@@ -10,24 +14,22 @@ html {
 ::-webkit-scrollbar-thumb{
     background:lighten($color: $darkBlue, $amount: 6);
     transition: .5s;
-    border-radius:5px;
-   
+    border-radius:5px;    
+}
+
+//dark mode
+.dark-mode{
+    filter: invert(1) hue-rotate(180deg);
     
+}
+.invert{
+    filter: invert(1) hue-rotate(180deg);
 }
 
 body{
     font-family: 'Roboto', sans-serif;
-    
 }
 /* Mobile */
-#nav-bg{    
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-    .active{color:$darkBlue}
-    a{
-        color: black;
-    }
-}
 
 
 
@@ -153,20 +155,6 @@ body{
     }
 }
 
-footer{
-    background-color: lightgray;
-    dt span {
-        color: $darkBlue;
-    }
-    dd{
-        margin-left: 10px;
-        margin-top: 10px;
-        a{color:black}
-    }
-    .row{
-        text-align: center;
-    }
-}
 
 @mixin para {
     font-size: 18px;
@@ -260,10 +248,6 @@ footer{
         }
     }
 
-    footer{
-        .row{
-            text-align: left;
-        }
-    }
+ 
 
 }

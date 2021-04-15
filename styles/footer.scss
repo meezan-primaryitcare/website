@@ -1,0 +1,61 @@
+@import "./colors";
+
+
+footer{
+    background-color: $footerlight;
+    dt,.col-12 {
+        color: white;
+        span {
+            color: $lightBlue;
+        }
+    }
+    dd{
+        margin-left: 10px;
+        margin-top: 5px;
+        a{color:white}
+    }
+    p{
+        color: white;
+    }
+    .row{
+        text-align: center;
+    }
+    #foot_bottom{
+        color:white;
+        background-color: $footerlightbottom;
+    }
+
+    .foot_logo{
+        margin-top: 20px;
+        padding-top: 10px;
+        .logo_bg{
+            background-color: $lightBlue;
+            margin-right: 10px;
+            padding: 12px ;
+            border-radius: 50%;
+            
+        }
+        img{
+            height: 20px;
+        }
+        
+    }
+}
+
+@mixin para {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0px; 
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+
+
+    footer{
+        .row{
+            text-align: left;
+        }
+    }
+
+}

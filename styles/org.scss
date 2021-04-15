@@ -17,19 +17,6 @@ html {
 
 
 
-.cursor{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: black;
-    transition: 0.1s;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-}
-
-
-
 body{
     font-family: 'Roboto', sans-serif;
     overflow-x: hidden;

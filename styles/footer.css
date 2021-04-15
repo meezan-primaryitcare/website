@@ -1,0 +1,57 @@
+footer {
+  background-color: #171C22;
+}
+
+footer dt, footer .col-12 {
+  color: white;
+}
+
+footer dt span, footer .col-12 span {
+  color: #009FE3;
+}
+
+footer dd {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+footer dd a {
+  color: white;
+}
+
+footer p {
+  color: white;
+}
+
+footer .row {
+  text-align: center;
+}
+
+footer #foot_bottom {
+  color: white;
+  background-color: #111111;
+}
+
+footer .foot_logo {
+  margin-top: 20px;
+  padding-top: 10px;
+}
+
+footer .foot_logo .logo_bg {
+  background-color: #009FE3;
+  margin-right: 10px;
+  padding: 12px;
+  border-radius: 50%;
+}
+
+footer .foot_logo img {
+  height: 20px;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+  footer .row {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

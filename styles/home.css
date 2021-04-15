@@ -14,24 +14,21 @@ html {
   border-radius: 5px;
 }
 
+.dark-mode {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+          filter: invert(1) hue-rotate(180deg);
+}
+
+.invert {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+          filter: invert(1) hue-rotate(180deg);
+}
+
 body {
   font-family: 'Roboto', sans-serif;
 }
 
 /* Mobile */
-#nav-bg {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-#nav-bg .active {
-  color: #14348E;
-}
-
-#nav-bg a {
-  color: black;
-}
-
 #hero-bg {
   margin-top: 70px;
   padding: 0px 20px;
@@ -180,27 +177,6 @@ body {
   border-bottom: 2px solid #136EFF;
 }
 
-footer {
-  background-color: lightgray;
-}
-
-footer dt span {
-  color: #14348E;
-}
-
-footer dd {
-  margin-left: 10px;
-  margin-top: 10px;
-}
-
-footer dd a {
-  color: black;
-}
-
-footer .row {
-  text-align: center;
-}
-
 /* For desktop: */
 @media only screen and (min-width: 991px) {
   #hero-bg {
@@ -272,9 +248,6 @@ footer .row {
     font-size: 18px;
     line-height: 30px;
     margin-top: 0px;
-  }
-  footer .row {
-    text-align: left;
   }
 }
 /*# sourceMappingURL=home.css.map */
