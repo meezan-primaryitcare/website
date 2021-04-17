@@ -1,0 +1,270 @@
+@import "./colors";
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar{
+    width: 12px;
+    background-color: transparent;
+
+}
+::-webkit-scrollbar-thumb{
+    background:lighten($color: $darkBlue, $amount: 6);
+    transition: .5s;
+    border-radius:5px; 
+    
+}
+
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    
+}
+/* Mobile */
+#nav-bg{    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .active{color:$darkBlue}
+    a{
+        color: black;
+    }
+}
+
+#hero-bg{
+    
+    margin-top: 70px;
+    padding:0px 20px;
+    
+    h5{color:$lightBlue}
+    h1{font-weight: 800;font-size: 30px;}
+    p {
+        line-height: 25px;
+        margin-top: 20px;
+        color: dimgrey;
+        font-size: 16px;
+        width: 90%;
+    }
+    img{
+        height: 200px;
+        margin-top:50px;
+        margin-bottom: 10px;
+    }
+
+    #first-btn{
+        background-color: $lightBlue;
+        border: none;
+        color: white;
+        border-radius: 100px;
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
+
+#bg_circle{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+    background-color: #F3F3F3;
+    margin-top: -250px;
+    margin-left: 25px;
+}
+
+#rect_bg{
+    // display: none;
+    height: 150px;
+    width: 100%;
+    background-color: $lightBlue;
+    margin-top: 140px;
+   
+}
+
+#sections_1,#sections{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    h2{
+        margin-left: 10px;
+    }
+   p{
+       margin-top: 20px;
+    
+   }
+
+}
+
+#sections_1{
+    
+   .boxes{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+   }
+   #pink_box,#yellow_box,#bluee_box{
+       margin-bottom: 20px;
+   }
+   #pink_box{
+       background-color: #ED6F78;
+   }
+   #yellow_box{
+       background-color: #FFD02F;
+   }
+   #bluee_box{
+       background-color: $darkBlue;
+     
+   }
+}
+
+#sections{
+ 
+   .blue_box{
+    height: 300px;
+    width: 200px;
+    background-color: $darkBlue;
+    margin-top: -350px;
+    margin-left: 20px;
+   }
+   img{
+    height: 300px;
+    margin-top:100px;
+    margin-bottom: 60px;
+   }
+   .logo_img{
+       height: 40px;
+       margin-right: 20px;
+       margin-top: 20px;
+   }
+
+   ul{
+       margin-top: 30px;
+    padding-inline-start: 0px;
+   }
+
+  ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: $lightBlue; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  button{
+    background-color: $lightBlue;
+    border: none;
+    color: white;
+    border-radius: 100px;
+    padding: 5px 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+}
+
+footer{
+    background-color: lightgray;
+    dt span {
+        color: $darkBlue;
+    }
+    dd{
+        margin-left: 10px;
+        margin-top: 10px;
+        a{color:black}
+    }
+    .row{
+        text-align: center;
+    }
+}
+
+@mixin para {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0px; 
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+
+    #hero-bg{
+       
+        h1{font-size: 40px;}
+        margin-top: 100px;
+        img{
+            margin-top:0px;
+            height: 400px;
+        }
+        p{
+            width: 350px;
+        }
+    }
+
+    
+    #bg_circle{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        background-color: #F3F3F3;
+        margin-top: -350px;
+        margin-left: 0px;
+    }
+
+    #rect_bg{
+        width: 600px;
+    }
+
+    #sections{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        h2{
+            margin-left: 0px;
+        }
+
+        .blue_box{
+            height: 400px;
+            width: 270px;
+            margin-top: -500px;
+            margin-left: -50px;
+           }
+           img{
+               margin-top: 100px;
+               height: 400px;
+               margin-bottom: 0px;
+           }
+           .logo_img{
+               height: 40px;
+               margin-right: 20px;
+               margin-top: 20px;
+           }
+       
+    
+    }
+
+    #sections_1{
+        
+        #pink_box,#yellow_box,#bluee_box{
+            width: 80%;
+            margin-bottom: 0px;
+        }
+        #pink_box{
+            background-color: #ED6F78;
+        }
+        #yellow_box{
+            background-color: #FFD02F;
+            margin-top: -30px;
+            margin-left: 200px;
+     
+        }
+        #bluee_box{
+            background-color: $darkBlue;
+            margin-top: -20px;
+        }
+     }
+
+   
+
+    footer{
+        .row{
+            text-align: left;
+        }
+    }
+
+}

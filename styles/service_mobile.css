@@ -1,0 +1,269 @@
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #183ea9;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 5px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+/* Mobile */
+#nav-bg {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#nav-bg .active {
+  color: #14348E;
+}
+
+#nav-bg a {
+  color: black;
+}
+
+#hero-bg {
+  margin-top: 70px;
+  padding: 0px 20px;
+}
+
+#hero-bg h5 {
+  color: #009FE3;
+}
+
+#hero-bg h1 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+#hero-bg p {
+  line-height: 25px;
+  margin-top: 20px;
+  color: dimgrey;
+  font-size: 16px;
+  width: 90%;
+}
+
+#hero-bg img {
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+#hero-bg #first-btn {
+  background-color: #009FE3;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  padding: 10px 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#bg_circle {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: #F3F3F3;
+  margin-top: -250px;
+  margin-left: 25px;
+}
+
+#rect_bg {
+  height: 150px;
+  width: 100%;
+  background-color: #009FE3;
+  margin-top: 140px;
+}
+
+#sections_1, #sections {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+#sections_1 h2, #sections h2 {
+  margin-left: 10px;
+}
+
+#sections_1 p, #sections p {
+  margin-top: 20px;
+}
+
+#sections_1 .boxes {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 30px 30px 30px 30px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+}
+
+#sections_1 #pink_box, #sections_1 #yellow_box, #sections_1 #bluee_box {
+  margin-bottom: 20px;
+}
+
+#sections_1 #pink_box {
+  background-color: #ED6F78;
+}
+
+#sections_1 #yellow_box {
+  background-color: #FFD02F;
+}
+
+#sections_1 #bluee_box {
+  background-color: #14348E;
+}
+
+#sections .blue_box {
+  height: 300px;
+  width: 200px;
+  background-color: #14348E;
+  margin-top: -350px;
+  margin-left: 20px;
+}
+
+#sections img {
+  height: 300px;
+  margin-top: 100px;
+  margin-bottom: 60px;
+}
+
+#sections .logo_img {
+  height: 40px;
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+#sections ul {
+  margin-top: 30px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+#sections ul li::before {
+  content: "\2022";
+  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #009FE3;
+  /* Change the color */
+  font-weight: bold;
+  /* If you want it to be bold */
+  display: inline-block;
+  /* Needed to add space between the bullet and the text */
+  width: 1em;
+  /* Also needed for space (tweak if needed) */
+  margin-left: -1em;
+  /* Also needed for space (tweak if needed) */
+}
+
+#sections button {
+  background-color: #009FE3;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  padding: 5px 30px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+footer {
+  background-color: lightgray;
+}
+
+footer dt span {
+  color: #14348E;
+}
+
+footer dd {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+footer dd a {
+  color: black;
+}
+
+footer .row {
+  text-align: center;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+  #hero-bg {
+    margin-top: 100px;
+  }
+  #hero-bg h1 {
+    font-size: 40px;
+  }
+  #hero-bg img {
+    margin-top: 0px;
+    height: 400px;
+  }
+  #hero-bg p {
+    width: 350px;
+  }
+  #bg_circle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: #F3F3F3;
+    margin-top: -350px;
+    margin-left: 0px;
+  }
+  #rect_bg {
+    width: 600px;
+  }
+  #sections {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #sections h2 {
+    margin-left: 0px;
+  }
+  #sections .blue_box {
+    height: 400px;
+    width: 270px;
+    margin-top: -500px;
+    margin-left: -50px;
+  }
+  #sections img {
+    margin-top: 100px;
+    height: 400px;
+    margin-bottom: 0px;
+  }
+  #sections .logo_img {
+    height: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  #sections_1 #pink_box, #sections_1 #yellow_box, #sections_1 #bluee_box {
+    width: 80%;
+    margin-bottom: 0px;
+  }
+  #sections_1 #pink_box {
+    background-color: #ED6F78;
+  }
+  #sections_1 #yellow_box {
+    background-color: #FFD02F;
+    margin-top: -30px;
+    margin-left: 200px;
+  }
+  #sections_1 #bluee_box {
+    background-color: #14348E;
+    margin-top: -20px;
+  }
+  footer .row {
+    text-align: left;
+  }
+}
+/*# sourceMappingURL=service_mobile.css.map */
