@@ -1,7 +1,3 @@
-html {
-  scroll-behavior: smooth;
-}
-
 ::-webkit-scrollbar {
   width: 12px;
   background-color: transparent;
@@ -85,20 +81,20 @@ body {
   margin-top: 140px;
 }
 
-#sections {
+.sections {
   margin-top: 100px;
   margin-bottom: 100px;
 }
 
-#sections h2 {
+.sections h2 {
   margin-left: 10px;
 }
 
-#sections p {
+.sections p {
   margin-top: 20px;
 }
 
-#sections .blue_box {
+.sections .blue_box {
   height: 300px;
   width: 200px;
   background-color: #14348E;
@@ -106,24 +102,24 @@ body {
   margin-left: 20px;
 }
 
-#sections img {
+.sections img {
   height: 300px;
   margin-top: 100px;
 }
 
-#sections .logo_img {
+.sections .logo_img {
   height: 40px;
   margin-right: 20px;
   margin-top: 20px;
 }
 
-#sections ul {
+.sections ul {
   margin-top: 30px;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
 }
 
-#sections ul li::before {
+.sections ul li::before {
   content: "\2022";
   /* Add content: \2022 is the CSS Code/unicode for a bullet */
   color: #009FE3;
@@ -138,7 +134,7 @@ body {
   /* Also needed for space (tweak if needed) */
 }
 
-#sections button {
+.sections button {
   background-color: #009FE3;
   border: none;
   color: white;
@@ -193,24 +189,24 @@ footer .row {
   #rect_bg {
     width: 600px;
   }
-  #sections {
+  .sections {
     margin-top: 100px;
     margin-bottom: 100px;
   }
-  #sections h2 {
+  .sections h2 {
     margin-left: 0px;
   }
-  #sections .blue_box {
+  .sections .blue_box {
     height: 400px;
     width: 270px;
     margin-top: -500px;
     margin-left: -50px;
   }
-  #sections img {
+  .sections img {
     margin-top: 100px;
     height: 400px;
   }
-  #sections .logo_img {
+  .sections .logo_img {
     height: 40px;
     margin-right: 20px;
     margin-top: 20px;

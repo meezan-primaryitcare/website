@@ -2,9 +2,15 @@
 
 
 footer{
+
+    #foot_img{
+        height: 200px;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
     background-color: $footerlight;
     dt,.col-12 {
-        color: white;
+        color: $footer_font_color;
         span {
             color: $lightBlue;
         }
@@ -12,10 +18,10 @@ footer{
     dd{
         margin-left: 10px;
         margin-top: 5px;
-        a{color:white}
+        a{color:$footer_font_color}
     }
     p{
-        color: white;
+        color: $footer_font_color;
     }
     .row{
         text-align: center;
@@ -53,6 +59,13 @@ footer{
 
 
     footer{
+
+        margin-top: 300px;
+        #foot_img{
+            height: 500px;
+            margin-top: -200px;
+            padding-left: 20px;
+        }
         .row{
             text-align: left;
         }

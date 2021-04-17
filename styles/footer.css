@@ -1,9 +1,15 @@
 footer {
-  background-color: #171C22;
+  background-color: #D6F3FF;
+}
+
+footer #foot_img {
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 footer dt, footer .col-12 {
-  color: white;
+  color: black;
 }
 
 footer dt span, footer .col-12 span {
@@ -16,11 +22,11 @@ footer dd {
 }
 
 footer dd a {
-  color: white;
+  color: black;
 }
 
 footer p {
-  color: white;
+  color: black;
 }
 
 footer .row {
@@ -50,6 +56,14 @@ footer .foot_logo img {
 
 /* For desktop: */
 @media only screen and (min-width: 991px) {
+  footer {
+    margin-top: 300px;
+  }
+  footer #foot_img {
+    height: 500px;
+    margin-top: -200px;
+    padding-left: 20px;
+  }
   footer .row {
     text-align: left;
   }

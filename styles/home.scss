@@ -1,13 +1,9 @@
 @import "./colors";
 
-
-
-html {
-    scroll-behavior: smooth;
-   
-}
 ::-webkit-scrollbar{
     width: 12px;
+    /* display: none; */
+  /* width: 5px; */
     background-color: transparent;
 
 }
@@ -87,15 +83,16 @@ body{
 }
 
 #earth-orbit {
+	
 	border: none;
 	border-radius: 50%;
 	height: 174px;
 	width: 174px;
 	position: absolute;
 	margin-top: -200px;
-	margin-left: 25px;
+	margin-left: 5%;
 	animation: spin-right 10s linear infinite;
-    
+
 }
 #moon-orbit {
     @extend #earth-orbit;
