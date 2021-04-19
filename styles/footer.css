@@ -2,6 +2,10 @@ footer {
   background-color: #D6F3FF;
 }
 
+footer h6 {
+  font-size: 12px;
+}
+
 footer #foot_img {
   height: 200px;
   margin-top: 20px;
@@ -58,6 +62,9 @@ footer .foot_logo img {
 @media only screen and (min-width: 991px) {
   footer {
     margin-top: 300px;
+  }
+  footer h6 {
+    font-size: 16px;
   }
   footer #foot_img {
     height: 500px;

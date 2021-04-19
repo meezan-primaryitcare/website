@@ -1,0 +1,249 @@
+::-webkit-scrollbar {
+  width: 12px;
+  /* display: none; */
+  /* width: 5px; */
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #183ea9;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 5px;
+}
+
+.dark-mode {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+          filter: invert(1) hue-rotate(180deg);
+}
+
+.invert {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+          filter: invert(1) hue-rotate(180deg);
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Mobile */
+p {
+  font-size: 12px;
+}
+
+#hero-bg {
+  margin-top: 70px;
+  padding: 0px 20px;
+}
+
+#hero-bg h5 {
+  color: #009FE3;
+}
+
+#hero-bg h1 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+#hero-bg p {
+  line-height: 25px;
+  margin-top: 10px;
+  color: dimgrey;
+}
+
+#hero-bg #first-btn {
+  background-color: #009FE3;
+  border: none;
+  color: white;
+  border-radius: 100px;
+  padding: 5px 30px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+svg {
+  height: 200px;
+  margin-top: 10px;
+  -webkit-transition: .4s;
+  transition: .4s;
+  width: 200px;
+  -webkit-animation: mk 6s linear infinite alternate;
+          animation: mk 6s linear infinite alternate;
+  padding: 10px 10px;
+  border-radius: 50%;
+  margin-bottom: 100px;
+}
+
+@-webkit-keyframes mk {
+  0% {
+    background-color: #136EFF;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  100% {
+    background-color: #000;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+@keyframes mk {
+  0% {
+    background-color: #136EFF;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+  50% {
+    -webkit-transform: rotateZ(-5deg);
+            transform: rotateZ(-5deg);
+  }
+  100% {
+    background-color: #000;
+    -webkit-transform: rotateZ(0deg);
+            transform: rotateZ(0deg);
+  }
+}
+
+.yellow-bg {
+  background-color: #FFF1C0;
+  border-radius: 16px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.yellow-bg h6 {
+  width: 90%;
+}
+
+.yellow-bg p {
+  margin-top: 30px;
+  padding: 0px 10px;
+}
+
+.yellow-bg img {
+  height: 60px;
+  float: right;
+  padding-bottom: 10px;
+  margin-right: 10px;
+}
+
+#about_us {
+  padding: 0px 30px 0px 30px;
+}
+
+#about_us h1 {
+  color: lightgrey;
+  font-size: 50px;
+  margin-left: -25px;
+  margin-bottom: 20px;
+}
+
+#about_us img {
+  margin-top: 10px;
+  height: 180px;
+  margin-bottom: 50px;
+}
+
+#about_us #short_height_mobile {
+  height: 150px;
+}
+
+#pitc_para {
+  padding: 0px 30px 0px 30px;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+#pitc_para h1 {
+  font-size: 30px;
+}
+
+#pitc_para h1 span {
+  color: #009FE3;
+}
+
+#pitc_para p {
+  margin-top: 40px;
+  font-size: 14px;
+  line-height: 25px;
+}
+
+#pitc_para #get_started {
+  margin-top: 20px;
+}
+
+#pitc_para #get_started span {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #136EFF;
+}
+
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+  p {
+    font-size: 18px;
+  }
+  #hero-bg {
+    margin-top: 100px;
+  }
+  #hero-bg h1 {
+    font-size: 40px;
+  }
+  #hero-bg img {
+    margin-top: 0px;
+    height: 400px;
+  }
+  svg {
+    height: 500px;
+    width: 500px;
+    margin-top: -50px;
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 80px 40px;
+    border-radius: 50%;
+    margin-bottom: 100px;
+  }
+  .yellow-bg p {
+    font-size: 18px;
+  }
+  #about_us h1 {
+    font-size: 80px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+  }
+  #about_us p {
+    font-size: 16px;
+    line-height: 30px;
+    margin-top: 0px;
+  }
+  #about_us img {
+    margin-top: 50px;
+    height: 300px;
+  }
+  #about_us #short_height_mobile {
+    height: 300px;
+  }
+  #pitc_para {
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  #pitc_para h1 {
+    font-size: 40px;
+  }
+  #pitc_para #get_started {
+    margin-top: 20px;
+  }
+  #pitc_para #get_started span {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #136EFF;
+  }
+  #pitc_para p {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top: 0px;
+  }
+}
+/*# sourceMappingURL=about.css.map */

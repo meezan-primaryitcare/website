@@ -263,13 +263,13 @@ footer .row {
 /* For desktop: */
 @media only screen and (min-width: 991px) {
   #hero-bg {
-    margin-top: 100px;
+    margin-top: 0px;
   }
   #hero-bg h1 {
     font-size: 40px;
   }
   #hero-bg img {
-    margin-top: 0px;
+    margin-top: 50px;
     height: 500px;
   }
   #hero-bg p {
