@@ -24,12 +24,12 @@ $(document).ready(function() {
                 $('.navbar-wrap').css('height', navbar_height + 'px');
                 $('#navbar_top').addClass("fixed-top bg-light animate__animated animate__fadeInDown shadow");
                 $('.nav-link').css('color','black');
-                $('#brand-image').height("45");
+                $('#brand-image').height("66");
                 
             }else{
                 $('#navbar_top').removeClass("fixed-top bg-light animate__animated animate__fadeInDown shadow");
                 $('.nav-link').css('color','black');
-                $('#brand-image').height("55");
+                $('#brand-image').height("66");
                 $('.navbar-wrap').css('height', 'auto');
             }   
         }); //end if
