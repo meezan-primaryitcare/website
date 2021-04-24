@@ -1,19 +1,4 @@
 @import "./colors";
-html {
-    scroll-behavior: smooth;
-}
-::-webkit-scrollbar{
-    width: 12px;
-    background-color: transparent;
-
-}
-::-webkit-scrollbar-thumb{
-    background:lighten($color: $darkBlue, $amount: 6);
-    transition: .5s;
-    border-radius:5px; 
-    
-}
-
 
 
 body{

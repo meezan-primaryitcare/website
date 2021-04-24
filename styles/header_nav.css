@@ -2,6 +2,19 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+::-webkit-scrollbar {
+  width: 12px;
+  display: none;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #183ea9;
+  -webkit-transition: .5s;
+  transition: .5s;
+  border-radius: 5px;
+}
+
 /* Mobile */
 #brand-image {
   height: 55px;

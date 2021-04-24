@@ -1,17 +1,3 @@
-::-webkit-scrollbar {
-  width: 12px;
-  /* display: none; */
-  /* width: 5px; */
-  background-color: transparent;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #183ea9;
-  -webkit-transition: .5s;
-  transition: .5s;
-  border-radius: 5px;
-}
-
 .dark-mode {
   -webkit-filter: invert(1) hue-rotate(180deg);
           filter: invert(1) hue-rotate(180deg);
