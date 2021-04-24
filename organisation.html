@@ -30,41 +30,116 @@
 
     <!-- Header -->
     <div>
-        <!-- Navbar wrap-->
-        <div id="nav-bg" class="navbar-wrap">
-            <nav class="navbar navbar-light navbar-expand-lg" id="navbar_top">
-                <div class="container divineza-section">
-                    <div class="navbar-brand">
-                        <a href="index.html">
-                            <img src="images/home_page/logo.png" height="55" width="" alt="PITC logo" id="brand-image">
-                        </a>
-                    </div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#NavbarMain" aria-controls="NavbarMain" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="NavbarMain">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                <a href="index.html" class="nav-link link hover-1">Home</a>
-                            </li>
-                            <li id="service_link" class="nav-item"><a class="nav-link link hover-1"
-                                    href="services.html">Services</a>
+ <!-- Navbar wrap-->
+ <div id="nav-bg" class="navbar-wrap">
+    <nav class="navbar navbar-light navbar-expand-lg" id="navbar_top">
+        <div class="container divineza-section">
+            <div class="navbar-brand">
+                <a href="index.html">
+                    <img src="images/home_page/logo_9.svg"  alt="PITC logo"
+                        id="brand-image">
+                </a>
+            </div>
 
-                            </li>
-                            <li class="nav-item"><a id="active_link" class="nav-link link hover-1"
-                                    href="organisation.html">Programs</a></li>
-                            <li class="nav-item"><a class="nav-link link hover-1" href="#">Blogs</a></li>
-                            <li class="nav-item"><a class="nav-link link hover-1" href="#">Products</a></li>
-                            <li class="nav-item"><a class="nav-link link hover-1" href="about.html">About</a></li>
-                            <li class="nav-item"><a class="nav-link link hover-1" href="contact.html">Contact</a></li>
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#NavbarMain"
+                aria-controls="NavbarMain" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="NavbarMain">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link link hover-1">Home</a>
+                    </li>
+                    <!-- <li class="nav-item"><a class="nav-link link hover-1" href="services.html">Services</a>
+                        
+                    </li> -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link  dropdown-toggle" href="services.html"
+                            data-bs-toggle="dropdown">Services</a>
+                        <ul class="dropdown-menu">
+
+                            <div class="container">
+                                <h4>Our Services</h4>
+                                <div class="row mb-3 mt-3">
+                                    <div class="col-12 col-md-4">
+                                        <li>
+                                            <a class="dropdown-item " href="services.html#mobile_dev">
+                                                <!-- <span id="num">1</span> -->
+                                                <span class="li-head">Mobile development</span><br>
+                                                <p class="li-para">We shape brands through exploration, <br> applying in-depth research to challenge <br> assumptions at every turn.</p>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <li>
+                                            <a class="dropdown-item " href="services.html#web_dev">
+                                                <!-- <span id="num">1</span> -->
+                                                <span class="li-head">Web development</span><br>
+                                                <p class="li-para">We shape brands through exploration, <br> applying in-depth research to challenge <br> assumptions at every turn.</p>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="col-12 col-md-4">
+                                        <li>
+                                            <a class="dropdown-item " href="#">
+                                                <!-- <span id="num">1</span> -->
+                                                <span class="li-head">Data Visualization</span><br>
+                                                <p class="li-para">We shape brands through exploration, <br> applying in-depth research to challenge <br> assumptions at every turn.</p>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row mb-3">
+                                    <div class="col-4">
+                                        <li>
+                                            <a class="dropdown-item " href="#">
+                                                <!-- <span id="num">1</span> -->
+                                                <span class="li-head">Managed Service Provider</span><br>
+                                                <p class="li-para">We shape brands through exploration, <br> applying in-depth research to challenge <br> assumptions at every turn.</p>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="col-4">
+                                        <li>
+                                            <a class="dropdown-item " href="#">
+                                                <!-- <span id="num">1</span> -->
+                                                <span class="li-head">Disaster Recovery</span><br>
+                                                <p class="li-para">We shape brands through exploration, <br> applying in-depth research to challenge <br> assumptions at every turn.</p>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    <div class="col-4">
+                                        <li>
+                                            <a class="dropdown-item " href="#">
+                                                <!-- <span id="num">1</span> -->
+                                                <span class="li-head">Digital Marketing Service</span><br>
+                                                <p class="li-para">We shape brands through exploration, <br> applying in-depth research to challenge <br> assumptions at every turn.</p>
+                                            </a>
+                                        </li>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+
                         </ul>
-                    </div>
-                </div>
-            </nav>
+                    </li>
+                    <li class="nav-item"><a  id="active_link" class="nav-link link hover-1">Programs</a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link link hover-1" href="#">Blogs</a></li>
+
+                    <li class="nav-item"><a class="nav-link link hover-1" href="#">Products</a></li>
+                    <li class="nav-item"><a class="nav-link link hover-1" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link link hover-1" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
         </div>
-        <!-- Navbar wrap ends -->
+    </nav>
+</div>
+<!-- Navbar wrap ends -->
 
         <!-- Hero Bg -->
         <div class="container mt-3" id="hero-bg" data-aos="fade-right" data-aos-offset="200" data-aos-duration="1000">
