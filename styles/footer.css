@@ -1,5 +1,5 @@
 footer {
-  background-color: #D6F3FF;
+  background-color: #14348E;
 }
 
 footer h6 {
@@ -13,7 +13,7 @@ footer #foot_img {
 }
 
 footer dt, footer .col-12 {
-  color: black;
+  color: white;
 }
 
 footer dt span, footer .col-12 span {
@@ -26,11 +26,11 @@ footer dd {
 }
 
 footer dd a {
-  color: black;
+  color: white;
 }
 
 footer p {
-  color: black;
+  color: white;
 }
 
 footer .row {
