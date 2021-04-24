@@ -8,8 +8,18 @@ body{
 
 
 /* Mobile */
+
+#brand-image{
+    height:55px;
+}
+
 #nav-bg{    
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    box-shadow: -1px 4px 11px -2px rgba(0,0,0,0.51);
+    -webkit-box-shadow: -1px 4px 11px -2px rgba(0,0,0,0.51);
+    -moz-box-shadow: -1px 4px 11px -2px rgba(0,0,0,0.51);
+
     .nav-link{color: #000;}
     
     #active_link{
@@ -69,3 +79,10 @@ body{
 }
 
 
+/* For desktop: */
+@media only screen and (min-width: 991px) {
+
+    #brand-image{
+        height:70px;
+    }
+}

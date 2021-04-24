@@ -81,7 +81,10 @@ body{
 }
 
 /* Mobile */
+
+
 #hero-bg{
+    
     
     margin-top: 70px;
     padding:0px 20px;
@@ -214,6 +217,7 @@ body{
 /* For desktop: */
 @media only screen and (min-width: 991px) {
 
+    
     #hero-bg{
         h1{font-size: 40px;}
         margin-top: 100px;
