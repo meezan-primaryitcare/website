@@ -35,21 +35,25 @@ footer{
         background-color: $footerlightbottom;
     }
 
-    .foot_logo{
+    #social-icons
+    {
+      i {
+        background-color: $lightBlue;
+        font-size: 25px;
+        border-radius: 50%;
+        color: white;
+        transition: .5s;
         margin-top: 20px;
-        padding-top: 10px;
-        .logo_bg{
-            background-color: $lightBlue;
-            margin-right: 10px;
-            padding: 12px ;
-            border-radius: 50%;
-            
-        }
-        img{
-            height: 20px;
-        }
-        
+      }
+
+      i:hover{
+        background-color: white;
+        color: $darkBlue;
+        border-radius: 20%;
+      }
+      
     }
+
 }
 
 @mixin para {

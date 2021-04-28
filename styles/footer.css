@@ -42,20 +42,20 @@ footer #foot_bottom {
   background-color: #111111;
 }
 
-footer .foot_logo {
-  margin-top: 20px;
-  padding-top: 10px;
-}
-
-footer .foot_logo .logo_bg {
+footer #social-icons i {
   background-color: #009FE3;
-  margin-right: 10px;
-  padding: 12px;
+  font-size: 25px;
   border-radius: 50%;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-top: 20px;
 }
 
-footer .foot_logo img {
-  height: 20px;
+footer #social-icons i:hover {
+  background-color: white;
+  color: #14348E;
+  border-radius: 20%;
 }
 
 /* For desktop: */

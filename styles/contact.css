@@ -89,6 +89,21 @@ body {
   height: 18px;
 }
 
+#contact_form #social-icons i {
+  font-size: 25px;
+  border-radius: 50%;
+  color: white;
+  -webkit-transition: .5s;
+  transition: .5s;
+  margin-top: 20px;
+}
+
+#contact_form #social-icons i:hover {
+  background-color: white;
+  color: #14348E;
+  border-radius: 20%;
+}
+
 #contact_form #submit-btn {
   border-radius: 10px;
   padding: 10px 30px;

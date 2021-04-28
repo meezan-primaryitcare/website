@@ -22,6 +22,10 @@ body{
 /* Header hover */
 @media all and (min-width: 992px) {
 
+    .dropdown-toggle::after {
+        content: none;
+    }
+
     .dropdown-menu{
         
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -68,7 +72,6 @@ body{
         
     }
 
-	.navbar .nav-item:hover .nav-link{   }
 
 	.navbar .nav-item:hover .dropdown-menu{ display: block;transition: .4s; }
 
@@ -97,11 +100,7 @@ body{
         // border-bottom: 2px solid black;
     }
 
-    .navbar-nav{
-        
-       
-    }
-
+    
     
 }
 

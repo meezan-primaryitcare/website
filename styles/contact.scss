@@ -81,6 +81,25 @@ body{
            height: 18px;
        }
    }
+
+   #social-icons
+    {
+      i {
+       
+        font-size: 25px;
+        border-radius: 50%;
+        color: white;
+        transition: .5s;
+        margin-top: 20px;
+      }
+
+      i:hover{
+        background-color: white;
+        color: $darkBlue;
+        border-radius: 20%;
+      }
+      
+    }
   
    #submit-btn{
        border-radius: 10px;
